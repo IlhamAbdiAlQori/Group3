@@ -3,95 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Website Group 3</title>
+    <title>Form</title>
 </head>
 <body>
-    <!-- Header -->
-    <header style="background-color: #333; color: white; padding: 1rem; text-align: center;">
-        <h1>Kritik dan Saran</h1>
-    </header>
->
-    <div style="display: flex;">
-        <!-- Sidebar -->
-        <aside style="width: 20%; padding: 1rem; font-family: Arial, sans-serif;">
-            <h2 style="color: white; font-size: 1.5rem; margin-bottom: 1rem;">Menu</h2>
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin-bottom: 1rem;">
-                    <a href="Index.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Lagu Kebangsaan Indonesia
-                    </a>
-                </li>
-                <li style="margin-bottom: 1rem;">
-                    <a href="History.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Sejarah Sepak Bola Indonesia
-                    </a>
-                </li>
-                <li style="margin-bottom: 1rem;">
-                    <a href="Progress.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Kemajuan Sepak Bola Indonesia
-                    </a>
-                </li>
-                <li style="margin-bottom: 1rem;">
-                    <a href="List.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Daftar Pemain Timnas Indonesia
-                    </a>
-                </li>
-                <li>
-                    <a href="Form.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Kritik dan Saran
-                    </a>
-                </li>
-            </ul>
-        </aside>
-
-        <!-- Content -->
-        <main style="width: 80%; padding: 1rem;">
-            <p>Berikan kritik dan saran kalian mengenai website kami, Terimakasih!</p>
-            
-            <table border="0" ">
-                <tr>
-                    <td>Nama</td>
-                    <td>:</td>
-                    <td><input type="text" name="nama" id="nama" value="" size="20" maxlength="20"></td>
-                </tr>
-                <tr>
-                    <td>No.Telp/HP</td>
-                    <td>:</td>
-                    <td><input type="tel" name="telp" id="telp"></td>
-                </tr>
-                <tr>
-                    <td>E-mail</td>
-                    <td>:</td>
-                    <td><input type="email" name="email" id="email"></td>
-                </tr>
-                <tr>
-                    <td>Kritik dan Saran</td>
-                    <td>:</td>
-                    <td><textarea name="comment" id="comment" cols="50" rows="5" placeholder="Tuliskan Krtik dan Saran disini!"></textarea></td>
-                </tr>
-                <tr>
-                    <td>Nilai kami</td>
-                    <td>:</td>
-                    <td><input type="radio" name="rate" id="rate" value="1">1
-                        <input type="radio" name="rate" id="rate" value="2">2
-                        <input type="radio" name="rate" id="rate" value="3">3
-                        <input type="radio" name="rate" id="rate" value="4">4
-                        <input type="radio" name="rate" id="rate" value="5">5
-                    </td>
-                </tr>
-                <tr>    
-                    <td colspan="3">
-                        <input type="submit" value="Submit"> 
-                        <input type="reset" value="Clear!">
-                    </td> 
-                </tr>
-            </table>
-        </main>
-    </div>
-
-    <!-- Footer -->
-    <footer style="background-color: #333; color: white; text-align: center; padding: 1rem; margin-top: 1rem;">
-        <p>&copy; 2024 Group 3. All rights reserved.</p>
-    </footer>
+    <main style="width: 80%; padding: 1rem;">
+        <p>Berikan kritik dan saran kalian mengenai website kami, Terimakasih!</p>
+        
+        <table border="0" ">
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama" id="nama" value="" size="20" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td>No.Telp/HP</td>
+                <td>:</td>
+                <td><input type="tel" name="telp" id="telp"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Kritik dan Saran</td>
+                <td>:</td>
+                <td><textarea name="comment" id="comment" cols="50" rows="5" placeholder="Tuliskan Krtik dan Saran disini!"></textarea></td>
+            </tr>
+            <tr>
+                <td>Nilai kami</td>
+                <td>:</td>
+                <td><input type="radio" name="rate" id="rate" value="1">1
+                    <input type="radio" name="rate" id="rate" value="2">2
+                    <input type="radio" name="rate" id="rate" value="3">3
+                    <input type="radio" name="rate" id="rate" value="4">4
+                    <input type="radio" name="rate" id="rate" value="5">5
+                </td>
+            </tr>
+            <tr>    
+                <td colspan="3">
+                    <input type="submit" value="Submit"> 
+                    <input type="reset" value="Clear!">
+                </td> 
+            </tr>
+        </table>
+    </main>
 </body>
 </html>

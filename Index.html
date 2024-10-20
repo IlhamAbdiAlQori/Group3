@@ -3,60 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Website Group 3</title>
+    <title>Dashboard Design</title>
 </head>
-<body>
-    <!-- Header -->
-    <header style="background-color: #333; color: white; text-align: center; padding: 1rem; margin-top: 1rem;">
-        <h1>Lagu Kebangsaan Indonesia</h1>
-    </header>
-
-    <div style="display: flex;">
-        <!-- Sidebar -->
-        <aside style="width: 20%; padding: 1rem; font-family: Arial, sans-serif;">
-            <h2 style="color: white; font-size: 1.5rem; margin-bottom: 1rem;">Menu</h2>
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin-bottom: 1rem;">
-                    <a href="Index.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Lagu Kebangsaan Indonesia
-                    </a>
-                </li>
-                <li style="margin-bottom: 1rem;">
-                    <a href="History.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Sejarah Sepak Bola Indonesia
-                    </a>
-                </li>
-                <li style="margin-bottom: 1rem;">
-                    <a href="Progress.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Kemajuan Sepak Bola Indonesia
-                    </a>
-                </li>
-                <li style="margin-bottom: 1rem;">
-                    <a href="List.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Daftar Pemain Timnas Indonesia
-                    </a>
-                </li>
-                <li>
-                    <a href="Form.html" style="text-decoration: none; color: #ecf0f1; font-size: 1.1rem; display: block; padding: 0.5rem; background-color: #34495e; border-radius: 5px; transition: background-color 0.3s ease;">
-                        Kritik dan Saran
-                    </a>
-                </li>
-            </ul>
-        </aside>
+<!-- Membagi halaman menjadi frame-frame: Header, Main content (Sidebar dan Konten Utama), dan Footer -->
+<frameset rows="15%,*,10%" border="1">
+    <!-- Frame Header -->
+    <frame name="header" src="header.html" scrolling="auto">
+    
+    <!-- Frame utama yang dibagi lagi menjadi Sidebar Menu dan Konten -->
+    <frameset cols="20%,80%" border="1">
+        <!-- Frame Sidebar -->
+        <frame name="sidebar" src="menu.html" scrolling="auto">
         
+        <!-- Frame Konten Utama -->
+        <frame name="main" src="national-anthem.html" scrolling="auto">
+    </frameset>
 
-        <!-- Content -->
-        <main style="width: 80%; padding: 1rem;">
-            <video width="854" weight="480" loop autoplay>
-                <source src="image/lagutimnas.mp4" type="video/mp4"/>
-                Browsermu tidak mendukung tag ini, gunakan browser lain!
-            </video>
-        </main>
-    </div>
+    <!-- Frame Footer -->
+    <frame name="footer" src="footer.html" scrolling="auto">
+</frameset>
 
-    <!-- Footer -->
-    <footer style="background-color: #333; color: white; text-align: center; padding: 1rem; margin-top: 1rem;">
-        <p>&copy; 2024 Group 3. All rights reserved.</p>
-    </footer>
-</body>
 </html>
