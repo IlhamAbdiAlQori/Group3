@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Volume Bangun Ruang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Volume Bangun Ruang</h1>
+        <form id="volumeForm">
+            <div class="form-group">
+                <label for="bangunRuang">Pilih Bangun Ruang:</label>
+                <select id="bangunRuang" name="bangunRuang">
+                    <option value="balok">Balok</option>
+                    <option value="tabung">Tabung</option>
+                    <option value="bola">Bola</option>
+                    <option value="prismaSegitiga">Prisma Segitiga</option>
+                    <option value="kerucut">Kerucut</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="input1">Masukkan Nilai 1:</label>
+                <input type="number" id="input1" name="input1" placeholder="Contoh: Panjang atau Jari-jari" required>
+            </div>
+
+            <div class="form-group">
+                <label for="input2">Masukkan Nilai 2:</label>
+                <input type="number" id="input2" name="input2" placeholder="Contoh: Lebar atau Tinggi" required>
+            </div>
+
+            <div class="form-group" id="input3Group" style="display: none;">
+                <label for="input3">Masukkan Nilai 3:</label>
+                <input type="number" id="input3" name="input3" placeholder="Contoh: Tinggi Prisma">
+            </div>
+
+            <button type="button" onclick="hitungVolume()">Hitung Volume</button>
+        </form>
+
+        <div id="hasilVolume" class="hasil"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
