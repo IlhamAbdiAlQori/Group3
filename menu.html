@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1C2A39;
+            color: white;
+        }
+
+        .sidebar {
+            width: 100%;
+            background-color: #1C2A39;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 15px 0;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 4px;
+        }
+
+        .menu li a:hover {
+            background-color: #2A3F54;
+            color: #ffffff;
+        }
+
+        .menu li a:active {
+            background-color: #324A5E;
+            color: #ffffff;
+        }
+        
+        .menu li a::before {
+            content: '• ';
+            font-size: 20px;
+            padding-right: 10px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .menu li a {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+
+            .sidebar h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul class="menu">
+            <li><a href="national-anthem.html" target="main">Lagu Kebangsaan Indonesia</a></li>
+            <li><a href="history.html" target="main">Sejarah Sepak Bola Indonesia</a></li>
+            <li><a href="progress.html" target="main">Kemajuan Sepak Bola Indonesia</a></li>
+            <li><a href="playerlist.html" target="main">Daftar Pemain Timnas Indonesia</a></li>
+            <li><a href="form.html" target="main">Kritik dan Saran</a></li>
+            <li><a href="team.html" target="main">Team Profile</a></li>
+        </ul>
+    </div>
+</body>
+</html>
