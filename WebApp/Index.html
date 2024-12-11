@@ -11,6 +11,7 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         header {
@@ -32,6 +33,11 @@
             width: 20%;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .sidebar.hidden {
+            transform: translateX(-100%);
         }
 
         .sidebar h2 {
@@ -57,12 +63,18 @@
             color: #FFD700;
         }
 
+        .sidebar li a.active {
+            font-weight: bold;
+            color: #FFD700;
+        }
+
         .main {
             background-color: #F4F4F4;
             color: #333;
             width: 80%;
             padding: 20px;
             overflow-y: auto;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         footer {
@@ -72,11 +84,48 @@
             text-align: center;
             flex: 0 0 10%;
         }
+
+        .sembunyikan {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #FFD700;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .tema-gelap {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #FFD700;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        .dark-mode .sidebar {
+            background-color: #444;
+        }
+
+        .dark-mode header, .dark-mode footer {
+            background-color: #222;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Kelompok 3</h1>
+        <button class="sembunyikan">Hide Sidebar</button>
+        <button class="tema-gelap">Dark Theme</button>
     </header>
     <div class="container">
         <div class="sidebar">
@@ -97,5 +146,27 @@
     <footer>
         <p>&copy; 2024 Group 3. All rights reserved.</p>
     </footer>
+
+    <script>
+        const toggleSidebarButton = document.querySelector('.sembunyikan');
+        const sidebar = document.querySelector('.sidebar');
+        toggleSidebarButton.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+        });
+
+        const toggleThemeButton = document.querySelector('.tema-gelap');
+        const body = document.body;
+        toggleThemeButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+
+        const menuLinks = document.querySelectorAll('.sidebar li a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
