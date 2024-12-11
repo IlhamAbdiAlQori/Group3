@@ -18,10 +18,12 @@
             padding: 20px;
             background-color: #007bff;
             color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             margin: 0;
+            font-size: 2.5em;
         }
 
         .team-container {
@@ -40,59 +42,72 @@
             padding: 20px;
             text-align: center;
             width: 200px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .team-member img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            border: 3px solid #007bff;
+            margin-bottom: 10px;
         }
 
         .team-member h2 {
             margin: 10px 0 5px;
             font-size: 1.2em;
+            color: #007bff;
         }
 
         .team-member p {
             margin: 5px 0;
+            color: #555;
         }
 
         .team-member:hover {
             transform: translateY(-5px);
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
+
+        @media (max-width: 600px) {
+            .team-member {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
-    <main style="width: 80%; padding: 1rem;"></main>
-    <h1 align="center">Team Profile</h1>
-    <div class="team-container">
-        <div class="team-member">
-            <img src="Image/fikri.jpg" alt="Anggota Tim 1">
-            <h2>Fikri Padli</h2>
-            <h2>202243500086</h2>
+    <header>
+        <h1>Profil Tim</h1>
+    </header>
+    <main>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="Image/fikri.jpg" alt="Anggota Tim 1">
+                <h2>Fikri Padli</h2>
+                <p>202243500086</p>
+            </div>
+            <div class="team-member">
+                <img src="Image/fahrizal.png" alt="Anggota Tim 2">
+                <h2>Muhammad Fahrizal</h2>
+                <p>202243500059</p>
+            </div>
+            <div class="team-member">
+                <img src="Image/ripki.jpg" alt="Anggota Tim 3">
+                <h2>Muhammad Rifki Al Fitri</h2>
+                <p>202243500012</p>
+            </div>
+            <div class="team-member">
+                <img src="Image/iyan.jpg" alt="Anggota Tim 4">
+                <h2>Muhamad Nurdiansyah</h2>
+                <p>202243500015</p>
+            </div>
+            <div class="team-member">
+                <img src="Image/ilham.jpg" alt="Anggota Tim 5">
+                <h2>Ilham Abdi Al Qori</h2>
+                <p>202243500079</p>
+            </div>
         </div>
-        <div class="team-member">
-            <img src="Image/fahrizal.png" alt="Anggota Tim 2">
-            <h2>Muhammad Fahrizal</h2>
-            <h2>202243500059</h2>
-        </div>
-        <div class="team-member">
-            <img src="Image/ripki.jpg" alt="Anggota Tim 3">
-            <h2>Muhammad Rifki Al Fitri</h2>
-            <h2>202243500012</h2>
-        </div>
-        <div class="team-member">
-            <img src="Image/iyan.jpg" alt="Anggota Tim 4">
-            <h2>Muhamad Nurdiansyah</h2>
-            <h2>202243500015</h2>
-        </div>
-        <div class="team-member">
-            <img src="Image/ilham.jpg" alt="Anggota Tim 4">
-            <h2>Ilham Abdi Al Qori</h2>
-            <h2>202243500079</h2>
-        </div>
-    </div>
+    </main>
 </body>
 </html>

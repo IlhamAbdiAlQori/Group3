@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        td {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <main style="width: 80%; padding: 1rem;">
-        <h1 align="center">Daftar Pemain Timnas Indonesia</h1>
-        <table style="width: 100%; border-collapse: collapse;">
+    <main>
+        <h1>Daftar Pemain Timnas Indonesia</h1>
+        <table>
             <thead>
-                <tr style="background-color: #333; color: white;">
+                <tr>
                     <th>Nama Pemain</th>
                     <th>Posisi</th>
                     <th>Tim</th>
@@ -108,7 +148,8 @@
                     <td>Dewa United FC</td>
                     <td>4,35 Miliar</td>
                 </tr>
+            </tbody>
         </table>
-</main>
+    </main>
 </body>
 </html>
